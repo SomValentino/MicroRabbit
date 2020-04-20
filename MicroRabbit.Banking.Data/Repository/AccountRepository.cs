@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using MicroRabbit.Banking.Data.Context;
 using MicroRabbit.Banking.Domain.Interfaces;
 using MicroRabbit.Banking.Domain.Models;
@@ -14,9 +15,9 @@ namespace MicroRabbit.Banking.Data.Repository
         {
             _bankingDbContext = bankingDbContext;
         }
-        public IEnumerable<Account> GetAccounts()
+        public async Task<IEnumerable<Account>> GetAccounts()
         {
-            return _bankingDbContext.Accounts;
+            return await Task.FromResult(_bankingDbContext.Accounts);
         }
     }
 }

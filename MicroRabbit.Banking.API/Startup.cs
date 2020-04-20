@@ -40,6 +40,7 @@ namespace MicroRabbit.Banking.API
             });
 
             services.AddMediatR(typeof(Startup));
+            services.RegisterBankingCommands();
             services.RegisterBankingServices();
             services.RegisterRabbitMQEventBus();
             services.AddSwaggerGen(c =>

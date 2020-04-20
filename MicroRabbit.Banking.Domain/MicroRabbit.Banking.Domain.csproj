@@ -13,4 +13,7 @@
     <Folder Include="EventHanders\" />
     <Folder Include="Enums\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj" />
+  </ItemGroup>
 </Project>
