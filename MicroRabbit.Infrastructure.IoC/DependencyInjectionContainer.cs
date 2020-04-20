@@ -16,7 +16,6 @@ namespace MicroRabbit.Infrastructure.IoC
         public static void RegisterRabbitMQEventBus(this IServiceCollection services)
         {
             //Event bus
-            services.AddTransient<IMediator, Mediator>();
             services.AddTransient<IEventBus, RabbitMQBus>();
         }
         public static void RegisterBankingServices(this IServiceCollection services)
