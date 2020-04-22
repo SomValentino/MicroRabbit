@@ -9,4 +9,8 @@
     <Folder Include="Services\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MicroRabbit.Transfer.Domain\MicroRabbit.Transfer.Domain.csproj" />
+    <ProjectReference Include="..\MicroRabbit.Infrastructure.Bus\MicroRabbit.Infrastructure.Bus.csproj" />
+  </ItemGroup>
 </Project>
